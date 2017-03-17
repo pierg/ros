@@ -17,5 +17,5 @@ RUN chmod +x /entrypoint.sh
 #                   source devel/setup.bash && \
 #                   echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc"
 
-COPY ./setup_catkin_ws.sh /
+COPY ./setup_catkin_ws.sh /usr/bin
 RUN chmod +x /setup_catkin_ws.sh

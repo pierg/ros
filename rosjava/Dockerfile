@@ -36,5 +36,5 @@ RUN apt-get update && \
 #                   cd ~/rosjava/catkin_ws_rosjava && \
 #                   catkin_make"
 
-COPY ./setup_rosjava_ws.sh /
+COPY ./setup_rosjava_ws.sh /usr/bin
 RUN chmod +x /setup_rosjava_ws.sh
