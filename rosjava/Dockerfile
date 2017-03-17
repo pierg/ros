@@ -3,10 +3,6 @@ FROM pmallozzi/ros:turtlebot
 RUN apt-get update && apt-get install -y \
     ros-kinetic-rosjava
 
-# Avoid prompts in apt-get
-ENV DEBIAN_FRONTEND noninteractive
-ENV HOME_DIR /home/java
-
 # Accept java license
 RUN echo /usr/bin/debconf shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 
@@ -25,5 +21,4 @@ RUN apt-get update && \
   apt-get clean -yq && \
   rm -rf /var/lib/apt/lists/*
 
-# Add java user that will run the java process
-RUN mkdir $HOME_DIR && chown -R nobody:nogroup $HOME_DIR
+
