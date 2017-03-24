@@ -4,4 +4,6 @@ RUN apt-get update && apt-get install -y \
     ros-kinetic-turtlebot \
     ros-kinetic-turtlebot-apps \
     ros-kinetic-turtlebot-interactions \
-    ros-kinetic-turtlebot-simulator
+    ros-kinetic-turtlebot-simulator \
+    ros-kinetic-rx \
+    ros-kinetic-turtlesim 
