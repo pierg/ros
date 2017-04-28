@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
 #                   echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc"
 
 
-# Setup catkin workspace by launching a script (this is useful when mounting a folder in the host as a catkin_ws folder
+# Setup catkin workspace by launching a script 
+# (this is useful when mounting a folder in the host as a catkin_ws folder)
 COPY ./setup_catkin_ws.sh /
 RUN chmod +x /setup_catkin_ws.sh
