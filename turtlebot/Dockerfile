@@ -7,3 +7,10 @@ RUN apt-get update && apt-get install -y \
     ros-kinetic-turtlebot-simulator \
     ros-kinetic-rx \
     ros-kinetic-turtlesim 
+
+RUN roscore
+RUN roslaunch turtlebot_gazebo turtlebot_world.launch
+
+RUN git clone https://github.com/kikedaddy/ThesisApi.git git && cd git/ThesisApi
+RUN chmod +x rest_python.py
+RUN ./rest_python.py 8886
