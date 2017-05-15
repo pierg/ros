@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     ros-kinetic-turtlebot-simulator \
     #ros-kinetic-rx \
     ros-kinetic-turtlesim 
-
+RUN source /opt/ros/kinetic/setup.bash
 RUN roscore
 RUN roslaunch turtlebot_gazebo turtlebot_world.launch
 
